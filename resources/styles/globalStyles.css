@@ -1,0 +1,291 @@
+
+html, body{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #130029;
+    justify-content: center;
+}
+
+main{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p{
+  line-height: 32px;
+
+}
+
+p, h1{
+    color: pink;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.headerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerInfo img{
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.headerMenu{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.headerMenu a{
+    padding: 5px;
+}
+
+/*Default link styles, can change later*/
+
+a:link {
+
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+
+  }
+  
+  a:hover {
+    background-color: pink;
+    color: white;
+    transition-duration: 700ms;
+
+
+  }
+  
+
+  .blockOne{
+    background: url(../images/OIP.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+    border-radius: 20px;
+
+  }
+
+  .imageText h1{
+    font-weight:900;
+    font-size: 3rem;
+    text-align: center;
+
+  }
+
+  .imageText p{
+    font-weight:600;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .blockTwo{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+
+  }
+
+  .blockTwoInfo{
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-right: 10px;
+
+  }
+
+  .blockTwoInfo a{
+    border: 4px solid pink;
+    border-radius: 20px;
+    padding: 15px;
+    width: fit-content;
+    margin-top: 4%;
+  }
+
+  .blockTwo a:hover{
+    background-color: pink;
+    color: white;
+    transition-duration: 700ms;
+  }
+
+  .infoAndImg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .imgContainer{
+    width:40%;
+    padding-left: 10px;
+  }
+
+  .blockTwoImg{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+.audioPlayer{
+    width: inherit;
+    opacity: 0.6;
+}
+
+.audioPlayer:hover{
+    opacity: 1;
+    transition-duration: 750ms;
+}
+
+/* Block Two Media query */
+@media only screen and (max-width: 1400px) {
+
+  header{
+    justify-content: space-evenly;
+
+  }
+
+
+  .blockTwo{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .blockTwoInfo{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 0;
+    align-items: center;
+    width: 80%;
+
+  }
+
+  .blockTwoInfo p, .blockTwoInfo audio{
+    margin-bottom: 5%;
+  }
+
+  .infoAndImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .imgContainer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 70%;
+  }
+
+}
+
+.blockThree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+    color: pink;
+    text-align: center;
+    background-color: darkblue;
+    margin: 2% -5%;
+    padding: 0 -5%;
+  }
+
+.blockThreeInfo{
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .blockThreeInfo h1{
+    padding: 20px;
+  }
+
+  .services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: grey solid 2px;
+    flex-wrap: wrap;
+
+  }
+
+  .servicesInfo{
+    font-size: 1.5rem;
+  }
+
+  .servicesImgContainer{
+    width: 40%;
+  }
+
+  .headphones{
+    width:100%;
+    border-radius: 20px;
+
+  }
+
+  /* Block Three Media query */
+@media only screen and (max-width: 1400px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .servicesImgContainer {
+    width: 60%;
+  }
+
+}
