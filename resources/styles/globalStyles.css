@@ -65,6 +65,7 @@ header{
 /*Default link styles, can change later*/
 
 a:link {
+
     text-decoration: none;
     padding: 15px;
     border-radius: 20px;
@@ -239,7 +240,8 @@ a:link {
     font-size: 1.5rem;
     padding-left: 10px;
     padding-right: 10px;
-    width: 80%;
+    margin-bottom: 2%;
+    text-align: left;
   }
 
   .blockThreeInfo h1{
@@ -275,6 +277,11 @@ a:link {
 
   /* Block Three Media query */
 @media only screen and (max-width: 1400px) {
+  .blockThreeInfo{
+    margin: 0 3%;
+  }
+  
+
   .services{
     display: flex;
     flex-direction: column;
